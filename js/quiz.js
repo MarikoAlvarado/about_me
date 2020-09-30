@@ -51,7 +51,7 @@ if (questionFour.toLowerCase() === 'no' || questionFour.toLowerCase() === 'n'){
 }
 
 // Fifth Quiz Question
-var questionFive = prompt('Final question! Even harder than the last! Did I move here from Oakland, CA?');
+var questionFive = prompt('This one is even harder than the last! Did I move here from Oakland, CA?');
 
 if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y'){
 //   console.log(userName + ' got the fifth question wrong!');
@@ -61,5 +61,43 @@ if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y'){
   alert('That\'s right! I moved here from Savannah, GA!');
 }
 
-alert('Thanks for playing along ' + userName + '! Checkout my "short" bio!');
+// Additional Loop Quizzes
 
+alert('Thanks for playing along ' + userName + '! Now try and guess how many different states I have lived in!');
+
+
+// START OF NUMBER GUESSING GAME
+
+var answer = '5';
+
+for(var g = 1; g <= 4; g++){
+
+  var guessNumber = prompt('How many states do you think I\'ve lived in, including WA? You get four guesses!');
+  if(parseInt (guessNumber) === answer){
+  // console.log(userName + 'guessed the correct number of states I have lived in!');
+    alert('Aha! That\'s right ' + userName + '! I\'ve lived in California, Missouri, Virginia, Georgia and now in Washington!');
+
+    break;
+
+  } else if(parseInt(guessNumber) <= '3'){
+    alert('too low!');
+
+  } else if(guessNumber === '4'){
+    alert('close!!!');
+
+  } else if(parseInt(guessNumber )>= '7'){
+    alert('too high!');
+
+  } else if(guessNumber === '6'){
+    alert('close!');
+  } else {
+
+    alert('enter a valid number!');
+  }
+
+}
+
+if(g === 5 && guessNumber !== answer){
+  alert('Sorry ' + userName + ', you ran out of guesses. I have lived in 5 different states!');
+
+}
