@@ -1,10 +1,51 @@
 h1{
-
-    background-color: black;
+    
+    margin-top: 100px;
     color: whitesmoke;
-    border-style: double;
-    border-color: wheat;
-    padding: 10px;
+    text-align: center;
     font-size: 30px;
+    font-style: italic;
+    background-color: black;
+    border-style: double;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    padding: 10px;
+
+}
+
+h2{
+
+    margin-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    background-color: black;
+    border-style: double;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-radius: 8%;
+    padding: 10px;
+
+}
+
+p{
+
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    border-style: double;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-radius: 10%;
+    padding: 20px;
+
+}
+
+div{
+
+    width: 70%;
+    margin: auto;
 
 }
