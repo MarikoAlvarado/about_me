@@ -1,5 +1,7 @@
 'use strict';
 
+var scoreCount = 0;
+
 var userName = prompt('Welcome! What is your name?');
 console.log('user name is, ' + userName);
 
@@ -15,6 +17,8 @@ if (questionOne.toLowerCase() === 'yes' || questionOne.toLowerCase() === 'y'){
 } else {
 //   console.log(userName + ' got the first question right!');
   alert('I guess you could tell huh...good job!');
+  scoreCount++;
+
 }
 
 // Second Quiz Question
@@ -26,6 +30,8 @@ if (questionTwo.toLowerCase() === 'no' || questionTwo.toLowerCase() === 'n'){
 } else {
 //   console.log(userName + ' got the second question right!');
   alert('I bet you saw my LinkedIn! Nice!');
+  scoreCount++;
+
 }
 
 // Third Quiz Question
@@ -34,6 +40,8 @@ var questionThree = prompt('Am I a veteran?');
 if (questionThree.toLowerCase() === 'yes' || questionThree.toLowerCase() === 'y'){
 //   console.log(userName + ' got the third question right!');
   alert('oopf! you\'re good at this!');
+  scoreCount++;
+
 } else {
 //   console.log(userName + ' got the third question wrong!');
   alert('Wrong answer!');
@@ -48,6 +56,8 @@ if (questionFour.toLowerCase() === 'no' || questionFour.toLowerCase() === 'n'){
 } else {
 //   console.log(userName + ' got the fourth question right!');
   alert('You\'re right! Good job!');
+  scoreCount++;
+
 }
 
 // Fifth Quiz Question
@@ -59,6 +69,8 @@ if (questionFive.toLowerCase() === 'yes' || questionFive.toLowerCase() === 'y'){
 } else {
 //   console.log(userName + ' got the fifth question right!');
   alert('That\'s right! I moved here from Savannah, GA!');
+  scoreCount++;
+
 }
 
 // Additional Loop Quizzes
@@ -68,7 +80,7 @@ alert('Thanks for playing along ' + userName + '! Now try and guess how many dif
 
 // START OF NUMBER GUESSING GAME
 
-var answer = '5';
+var answer = 5;
 
 for(var g = 1; g <= 4; g++){
 
@@ -76,7 +88,7 @@ for(var g = 1; g <= 4; g++){
   if(parseInt (guessNumber) === answer){
   // console.log(userName + 'guessed the correct number of states I have lived in!');
     alert('Aha! That\'s right ' + userName + '! I\'ve lived in California, Missouri, Virginia, Georgia and now in Washington!');
-
+    scoreCount++;
     break;
 
   } else if(parseInt(guessNumber) <= '3'){
@@ -85,7 +97,7 @@ for(var g = 1; g <= 4; g++){
   } else if(guessNumber === '4'){
     alert('close!!!');
 
-  } else if(parseInt(guessNumber )>= '7'){
+  } else if(parseInt(guessNumber ) >= '7'){
     alert('too high!');
 
   } else if(guessNumber === '6'){
@@ -101,3 +113,31 @@ if(g === 5 && guessNumber !== answer){
   alert('Sorry ' + userName + ', you ran out of guesses. I have lived in 5 different states!');
 
 }
+
+// START OF FAVORITE MONTHS GUESSING GAME
+
+var faveMonths = ['june', 'october'];
+
+for(var x = 1; x <= 6; x++){
+
+  var guessMonths = prompt('I have two favorite months! Try and guess at least one of them!');
+  if(guessMonths.toLowerCase() === faveMonths[0] || guessMonths.toLowerCase() === faveMonths[1]){
+    alert('Yes that is one of them! Great guess!');
+    scoreCount++;
+    alert('Thanks for letting me quiz you ' + userName + ' You got ' + scoreCount + ' out of 7 questions correct!');
+
+    break;
+
+  } else {
+    alert('Sorry, that is not one of my favorite months!');
+
+  }
+
+}
+
+if(x === 7){
+  alert('Sorry, you ran out of guesses. My favorite months are June and October!');
+  alert('Thanks for letting me quiz you ' + userName + ' You got ' + scoreCount + ' out of 7 questions correct!');
+
+}
+
