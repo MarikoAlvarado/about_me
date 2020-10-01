@@ -43,9 +43,44 @@ p{
 
 }
 
+
+ul{
+
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    background-color: black;
+    border-style: double;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-radius: 10%;
+    padding: 20px;
+
+
+}
+
+
+
+ol {
+
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    border-style: double;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-radius: 10%;
+    padding: 20px;
+    list-style-position: inside;
+
+}
+
+
 div{
 
     width: 70%;
     margin: auto;
 
 }
+
