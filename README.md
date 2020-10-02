@@ -4,6 +4,9 @@ This is my project site where I will be making daily additions and edits learned
 
 ### Resources
 
+Duckett HTML&CSS
+
+Duckett JAVASCRIPT&JQUERY
 
 ### Pair Programming
 
