@@ -1,10 +1,10 @@
 h1{
     
+    font-family: 'Kaushan Script', cursive;
     margin-top: 100px;
     color: whitesmoke;
     text-align: center;
     font-size: 30px;
-    font-style: italic;
     background-color: black;
     border-style: double;
     border-color: blanchedalmond;
@@ -19,7 +19,7 @@ h2{
     color: whitesmoke;
     text-align: center;
     font-size: 20px;
-    font-style: italic;
+    font-family: 'Kaushan Script', cursive;
     background-color: black;
     border-style: double;
     border-color: blanchedalmond;
@@ -61,7 +61,7 @@ ul{
 
 
 
-ol {
+ol{
 
     color: white;
     text-align: center;
@@ -83,4 +83,3 @@ div{
     margin: auto;
 
 }
-
